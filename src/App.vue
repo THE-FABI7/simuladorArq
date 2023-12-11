@@ -3,6 +3,7 @@
     <div class="welcome-screen">
       <h1>SIMULADOR DE PROCESADOR</h1>
       <h3>Estudiantes: Fabian Guancha -- Samuel Quiroga</h3>
+      <br>
       <div class="animation">
         <img class="person" src="./assets/inicio.png" alt="Person 1" />
       </div>

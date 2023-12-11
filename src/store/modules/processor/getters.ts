@@ -15,3 +15,5 @@ export const agetInstance: Getter<ProcessorState, unknown> = (state) => {
 export const getMemoryData: Getter<ProcessorState, unknown> = (state) => {
   return state.memoryData;
 };
+
+

@@ -1,10 +1,10 @@
 <template>
   <div class="alu">
     <h2>ALU</h2>
-    <img src="@/assets/brow.png" alt="" height="90px" />
+    <img src="@/assets/coin.gif" alt="" height="90px" />
     <div class="component">
       <v-row class="row">
-        <v-col cols="6" class="label">Operando:</v-col>
+        <v-col cols="6" class="label">Oper:</v-col>
         <v-col class="value">{{ operandCode }}</v-col>
       </v-row>
       <v-row class="row">
@@ -16,7 +16,7 @@
         <v-col class="value">{{ operandTwo }}</v-col>
       </v-row>
       <v-row class="row">
-        <v-col cols="6" class="label">Resultado:</v-col>
+        <v-col cols="6" class="label">Result:</v-col>
         <v-col class="value">{{ operandResult }}</v-col>
       </v-row>
     </div>

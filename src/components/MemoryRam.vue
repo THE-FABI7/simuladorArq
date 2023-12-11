@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>Memoria Ram</h1>
+    <h1>Memoria</h1>
 
     <div class="component instruction-content">
       <h2>Instrucciones</h2>
