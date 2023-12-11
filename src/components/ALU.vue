@@ -1,7 +1,7 @@
 <template>
   <div class="alu">
     <h2>ALU</h2>
-    <img src="@/assets/logo.png" alt="" height="90px" />
+    <img src="@/assets/brow.png" alt="" height="90px" />
     <div class="component">
       <v-row class="row">
         <v-col cols="6" class="label">Operando:</v-col>
@@ -55,12 +55,14 @@ h2 {
 }
 
 .component {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 10px;
   margin-top: 10px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #122130;
   width: 200px;
+  height: 300px; /* Asegúrate de tener una altura definida */
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
 }
 
 .v-row {

@@ -2,11 +2,12 @@
   <v-app id="app">
     <div class="welcome-screen">
       <h1>SIMULADOR DE PROCESADOR</h1>
-      <p>Estudiantes: Fabian Guancha -- Samuel Quiroga</p>
+      <h3>Estudiantes: Fabian Guancha -- Samuel Quiroga</h3>
       <div class="animation">
         <img class="person" src="./assets/inicio.png" alt="Person 1" />
       </div>
       <nav><router-link to="/home" class="button" >Vamos a ya!!</router-link></nav>
+      <br>
       <router-view/>
     </div>
   </v-app>

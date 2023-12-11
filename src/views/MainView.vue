@@ -12,11 +12,12 @@
             label="Instrucciones"
             outlined
             no-resize
+            placeholder="mov AL 2, add AL 3, mul AL 4, sub AL 5"
           ></v-textarea>
           <v-text-field outlined label="Ciclo de tiempo" v-model="time">
           </v-text-field>
           <div class="options">
-            <v-btn small @click="transferData">Iniciar</v-btn>
+            <v-btn small color="green" @click="transferData">Iniciar</v-btn>
           </div>
         </v-form>
         <div class="bus">
@@ -26,13 +27,13 @@
           <ControlUnit />
         </div>
       </div>
+      <div class="component">
+        <Records />
+      </div>
 
       <div class="component memory-ram">
         <MemoryRam />
       </div>
-    </div>
-    <div class="component">
-      <Records />
     </div>
   </div>
 </template>
@@ -75,11 +76,12 @@ export default Vue.extend({
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 30px;
-  background-color: #f2f2f2;
+  margin: 1px;
+  background-color: #565564;
   padding: 20px;
   border-radius: 4px;
 }
+
 
 .processor {
   display: flex;
@@ -93,6 +95,7 @@ export default Vue.extend({
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  margin: 5px;
 }
 
 .control-unit {
@@ -125,7 +128,7 @@ export default Vue.extend({
 
 .bus {
   border: 1px solid #ddd;
-  width: 250px;
+  width: 300px;
   height: 140px;
   justify-content: center;
   align-items: center;
@@ -139,15 +142,5 @@ export default Vue.extend({
   margin-top: 10px;
 }
 
-.options v-btn {
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-}
 
-.options v-btn:hover {
-  background-color: #0056b3;
-}
 </style>
