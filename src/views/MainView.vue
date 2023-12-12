@@ -35,14 +35,10 @@
         <MemoryRam />
       </div>
     </div>
-      <br>
-      
-       
-      <Footer />
-    
+    <br />
 
+    <Footer />
   </div>
-
 </template>
 
 <script lang="ts">

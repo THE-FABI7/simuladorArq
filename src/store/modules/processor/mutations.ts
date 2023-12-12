@@ -27,6 +27,8 @@ export const transferDataMemoryToRecord: Mutation<ProcessorState> = async (
   instructions.forEach((instruction: string, index: number) => {
     if (!instruction) return;
 
+   /*  está
+   agregando una nueva propiedad al objeto `state.memoryData` en el `index` especificado. */
     Vue.set(state.memoryData, index, {
       address: "inmediato",
       value: instruction,
